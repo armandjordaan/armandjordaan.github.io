@@ -1,1 +1,250 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armand Jordaan - Software Developer</title>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Custom Styles */
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x900/?coding,technology');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .skills li, .technologies li {
+      margin-bottom: 0.5em;
+    }
+    .education-card {
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .education-card:hover {
+      box-shadow: 0 10px 15px rgba(10, 10, 10, 0.2), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    }
+    .footer-icons a {
+      color: #4a4a4a;
+      transition: color 0.3s ease;
+    }
+    .footer-icons a:hover {
+      color: #3273dc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <!-- You can add a logo here -->
+        <strong>Armand Jordaan</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMain" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#about">
+          About
+        </a>
+        <a class="navbar-item" href="#skills">
+          Skills
+        </a>
+        <a class="navbar-item" href="#education">
+          Education
+        </a>
+        <a class="navbar-item" href="#footer">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero is-large is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Armand Jordaan
+        </h1>
+        <h2 class="subtitle">
+          Software Developer from South Africa
+        </h2>
+        <a href="#about" class="button is-primary is-large">Learn More About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="title">About Me</h2>
+      <div class="columns">
+        <div class="column is-6">
+          <figure class="image is-4by3">
+            <img src="https://source.unsplash.com/800x600/?developer,coding" alt="Developer">
+          </figure>
+        </div>
+        <div class="column is-6">
+          <div class="content">
+            <p>
+              I am a passionate software developer based in South Africa. Coding isn't just a job for me; it's my life. With a strong foundation in various programming languages and a keen interest in both backend and embedded systems, I strive to build efficient and scalable solutions that make a difference.
+            </p>
+            <p>
+              Over the years, I've honed my skills in developing robust backend systems, crafting intuitive frontend interfaces, and working with embedded systems to bridge the gap between hardware and software. My diverse skill set allows me to tackle complex challenges and deliver high-quality software solutions.
+            </p>
+            <p>
+              When I'm not coding, I enjoy exploring the latest technologies, contributing to open-source projects, and sharing my knowledge with the developer community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section has-background-light" id="skills">
+    <div class="container">
+      <h2 class="title">Skills</h2>
+      <div class="columns">
+        <div class="column">
+          <h3 class="subtitle">Programming Languages</h3>
+          <ul class="skills">
+            <li><i class="fas fa-check"></i> C/C++</li>
+            <li><i class="fas fa-check"></i> C#</li>
+            <li><i class="fas fa-check"></i> Java</li>
+            <li><i class="fas fa-check"></i> Python</li>
+            <li><i class="fas fa-check"></i> Pascal</li>
+            <li><i class="fas fa-check"></i> Assembly Language</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="subtitle">Technologies & Frameworks</h3>
+          <ul class="skills">
+            <li><i class="fas fa-check"></i> Backend Systems (Node.js, .NET)</li>
+            <li><i class="fas fa-check"></i> Frontend Systems (HTML, CSS, JavaScript, React)</li>
+            <li><i class="fas fa-check"></i> Embedded Systems (Arduino, Raspberry Pi)</li>
+            <li><i class="fas fa-check"></i> Databases (MySQL, PostgreSQL, MongoDB)</li>
+            <li><i class="fas fa-check"></i> APIs (REST, GraphQL)</li>
+            <li><i class="fas fa-check"></i> Version Control (Git, GitHub, GitLab)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3 class="subtitle">Tools & Platforms</h3>
+          <ul class="skills">
+            <li><i class="fas fa-check"></i> Docker & Kubernetes</li>
+            <li><i class="fas fa-check"></i> AWS & Azure</li>
+            <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+            <li><i class="fas fa-check"></i> Agile & Scrum Methodologies</li>
+            <li><i class="fas fa-check"></i> Linux & Windows Environments</li>
+            <li><i class="fas fa-check"></i> Testing Frameworks (JUnit, pytest)</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="subtitle">Soft Skills</h3>
+          <ul class="skills">
+            <li><i class="fas fa-check"></i> Problem-Solving</li>
+            <li><i class="fas fa-check"></i> Team Collaboration</li>
+            <li><i class="fas fa-check"></i> Effective Communication</li>
+            <li><i class="fas fa-check"></i> Time Management</li>
+            <li><i class="fas fa-check"></i> Adaptability</li>
+            <li><i class="fas fa-check"></i> Continuous Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="title">Education</h2>
+      <div class="columns is-multiline">
+        <!-- Education Card 1 -->
+        <div class="column is-6">
+          <div class="card education-card">
+            <div class="card-content">
+              <p class="title is-4">Bachelor of Science in Computer Science</p>
+              <p class="subtitle is-6">University of South Africa</p>
+              <div class="content">
+                <ul>
+                  <li>Graduated: December 2018</li>
+                  <li>GPA: 3.8/4.0</li>
+                  <li>Relevant Coursework: Data Structures, Algorithms, Operating Systems, Embedded Systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card 2 -->
+        <div class="column is-6">
+          <div class="card education-card">
+            <div class="card-content">
+              <p class="title is-4">Certified Python Developer</p>
+              <p class="subtitle is-6">Coursera</p>
+              <div class="content">
+                <ul>
+                  <li>Completed: June 2020</li>
+                  <li>Focus Areas: Advanced Python, Web Development with Django, Data Analysis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more education cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2025 Armand Jordaan. All rights reserved.
+      </p>
+      <p class="footer-icons">
+        <!-- Social Media Links -->
+        <a href="https://www.linkedin.com/in/armand-jordaan-7935b124/" target="_blank"><i class="fab fa-linkedin fa-lg mx-2"></i></a>
+        <a href="https://github.com/armandjordaan" target="_blank"><i class="fab fa-github fa-lg mx-2"></i></a>
+        <a href="https://twitter.com/armandjordaan" target="_blank"><i class="fab fa-twitter fa-lg mx-2"></i></a>
+        <!-- Add more social links as needed -->
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bulma Navbar Burger Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all navbar-burger elements
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const targetElement = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          targetElement.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
